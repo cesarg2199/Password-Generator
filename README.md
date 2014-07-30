@@ -18,3 +18,6 @@ How to use
 
 -Generate your encrypted passwords.
 
+Working example at
+http://jsfiddle.net/cesarg2199/xwxe4/
+

@@ -1,5 +1,10 @@
-//Random password generator v1.0
-//By Cesar Guerrero
+//Random password generator v1.1
+/*
+    Revisions:
+    Can now use them as classes instead of id's which meand you can have the confirm password field show up many times
+    
+    Note if you try to use the confirm password field as password,             the two results will be different
+*/
 
 function shuffle() {
     //Getting array of alphabet
@@ -22,8 +27,8 @@ function key() {
     var secondLetter = shuffle();
 
     //Concatinating indiviual values together as a set of 4
-    var pin = firstNumber + firstLetter + secondNumber + secondLetter;
-
+    var pin = firstNumber+firstLetter+secondNumber+secondLetter;
+    
     //Returning the set of 4
     return pin;
 }
@@ -45,10 +50,10 @@ function generate() {
 
 $("#button").click(function () {
     //Setting the value of the password field with what was generated
-    var $pass = $("#p").val(generate);
+    var $pass = $(".password").val(generate);
 
     //Setting was on the password field to the confirm password field
-    $("#cp").val($pass.val());
+    $(".c_password").val($pass.val());
 
     //How to show user what was generated
     $("#getter").text($pass.val());

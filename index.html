@@ -1,10 +1,9 @@
 <html>  
   <body>
-    <p>Password:</p><input type="text" class="password"><br />
-    <p>Confirm Password:</p><input type="text" class="c_password "><br />
-    <p>Another Confirm Password:</p><input type="text" class="c_password "><br />
-    <p>Yet Another Confirm Password:</p><input type="text" class="c_password ">
-    <button id="button">Generate Encrypted Password?</button>
+    <p>Password:</p><input type="text" id="password"><br />
+    <p>Confirm Password:</p><input type="text" id="confirm"><br />
+    <button id="button" onclick="randomPassword()">Generate Encrypted Password?</button>
     <p id="getter"></p>
+  <script type="text/javascript" src="random_password_generator.js"></script>
   </body>
 </html>
